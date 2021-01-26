@@ -1,0 +1,27 @@
+{
+  "name": "VRA linker",
+  "version": "0.1",
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+  "description": "VRA linker",
+  "icons": {
+    "256": "main-icon-2.png"
+  },
+  "background": {
+    "persistent": false,
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "browser_action": {
+    "default_title": "VRA linker",
+    "default_popup": "popup.html",
+    "style_css": "style.css",
+    "javascript": "popup.js"
+  },
+  "permissions": [
+    "tabs",
+    "contextMenus",
+    "webNavigation"
+  ]
+}
