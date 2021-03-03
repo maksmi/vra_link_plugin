@@ -25,6 +25,7 @@
   },
   "permissions": [
     "tabs",
+    "bookmarks",
     "contextMenus",
     "webNavigation",
     "storage"
