@@ -1,6 +1,6 @@
 {
   "name": "VRA linker",
-  "version": "0.1",
+  "version": "0.3",
   "manifest_version": 2,
   "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
   "description": "VRA linker",
@@ -19,9 +19,14 @@
     "style_css": "style.css",
     "javascript": "popup.js"
   },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
   "permissions": [
     "tabs",
     "contextMenus",
-    "webNavigation"
+    "webNavigation",
+    "storage"
   ]
 }

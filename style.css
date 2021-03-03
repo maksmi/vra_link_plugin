@@ -108,3 +108,9 @@ a.active *,
     font-weight: bold !important;
     color: rgba(139, 233, 253, 1) !important;
 }
+
+textarea#links{
+    width: 300px;
+    height: 200px;
+    margin-bottom: 10px;
+}
