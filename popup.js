@@ -69,7 +69,7 @@ function create_list() {
                 });
             });
             let button = document.createElement("button");
-            button.innerText = "ADD TO BOOKMARKS"
+            button.innerText = "ADD TO BOOKMARKS "
             button.onclick = function () {
                 add_bookmarks(url);
             };
