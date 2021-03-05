@@ -1,10 +1,10 @@
 const def_list = 'b2b_main|B2B_PORTAL (MAIN)|80|\n' +
-    'b2b_8088|B2B_PORTAL (8088)|8088|\n' +
     'b2b_service|B2B_PORTAL service access (555)|555|/service-access/login\n' +
-    'Zman|ZMAN|2182|\n' +
+    'Zman|ZMAN|2182|/#/localhost\n' +
     'portainer|PORTAINER|7000|\n' +
-    'b2b_swggeer|SWAGGER-UI|8080|/swagger-ui.html\n' +
-    'log_changer|LOG LEVEL CHANGER|8055|';
+    'log_changer|LOG LEVEL CHANGER|8055|\n' +
+    'b2b_8088|B2B_PORTAL (8088)|8088|\n' +
+    'b2b_swggeer|SWAGGER-UI|8080|/swagger-ui.html';
 
 function init_options() {
     let json = [];

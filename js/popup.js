@@ -31,6 +31,14 @@ function add_bookmarks(url) {
             add_bookmarks_template(url.hostname);
         }
     });
+    // Update status to let user know options were saved.
+    var status = document.getElementById('status');
+    status.textContent = 'Options saved.';
+    setTimeout(function () {
+        status.textContent = '';
+    }, 750);
+
+  //  window.close();
 }
 
 function add_bookmarks_template(vra_name) {
@@ -45,7 +53,6 @@ function add_bookmarks_template(vra_name) {
                 linksListAsObj: []
             }, function (items) {
                 items.linksListAsObj.forEach(function (entry) {
-                    add_item(url, entry.name, entry.port, entry.path)
                     chrome.bookmarks.create({
                         'parentId': newFolder.id,
                         'title': entry.name,
